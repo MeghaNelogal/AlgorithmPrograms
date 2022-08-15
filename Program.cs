@@ -7,7 +7,7 @@ namespace AlgotithmPrograms
         public static void Main(string[] args)
         {
             Console.WriteLine("Welcome To Algotithm Programs Problems");
-            Console.WriteLine("1.Binary Serach Program\n2.Insertion sort program\n3.Bubble Sort");
+            Console.WriteLine("1.Binary Serach Program\n2.Insertion sort program\n3.Bubble Sort\n4.Merge Sort Problem");
             const string File_Path = @"D:\BridgelabzPracticeProblems\AlgorithmPrograms\AlgorithmPrograms\AlgorithmPrograms\AlgorithmPrograms\Data.txt";
             bool check = true;
             while (check)
@@ -38,10 +38,19 @@ namespace AlgotithmPrograms
                         problem.Display(arr2);
                         break;
                     case 3:
-                        int[] arr3 = { 50, 29, 98, 47, 67, 20 };
+                        int[] arr3 = { 60, 92, 88, 44, 97, 10 };
                         BubbleSort problem1 = new BubbleSort();
                         problem1.Bubble(arr3);
                         problem1.Display(arr3);
+                        break;
+                    case 4:
+                        MergeSort merge = new MergeSort();
+                        int[] arr4 = { 15, 51, 53, 7, 8, 2 };
+                        Console.WriteLine("Unsorted array");
+                        merge.DisplayMerge(arr4);
+                        merge.Sorting(arr4, 0, arr4.Length - 1);
+                        Console.WriteLine("unsorted array");
+                        merge.DisplayMerge(arr4);
                         break;
                     default:
                         check = false;
