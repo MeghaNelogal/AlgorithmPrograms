@@ -7,7 +7,7 @@ namespace AlgotithmPrograms
         public static void Main(string[] args)
         {
             Console.WriteLine("Welcome To Algotithm Programs Problems");
-            Console.WriteLine("1.Binary Serach Program\n2.Insertion sort program");
+            Console.WriteLine("1.Binary Serach Program\n2.Insertion sort program\n3.Bubble Sort");
             const string File_Path = @"D:\BridgelabzPracticeProblems\AlgorithmPrograms\AlgorithmPrograms\AlgorithmPrograms\AlgorithmPrograms\Data.txt";
             bool check = true;
             while (check)
@@ -19,6 +19,8 @@ namespace AlgotithmPrograms
                 switch (option)
                 {
                     case 1:
+
+
                         string[] arr = words.Split(',');
                         Console.WriteLine("Enter word to Search");
                         string a = Console.ReadLine();
@@ -34,6 +36,12 @@ namespace AlgotithmPrograms
                         InsertionSort problem = new InsertionSort();
                         problem.Insertion(arr2);
                         problem.Display(arr2);
+                        break;
+                    case 3:
+                        int[] arr3 = { 50, 29, 98, 47, 67, 20 };
+                        BubbleSort problem1 = new BubbleSort();
+                        problem1.Bubble(arr3);
+                        problem1.Display(arr3);
                         break;
                     default:
                         check = false;
