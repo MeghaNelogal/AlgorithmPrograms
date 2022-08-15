@@ -7,7 +7,7 @@ namespace AlgotithmPrograms
         public static void Main(string[] args)
         {
             Console.WriteLine("Welcome To Algotithm Programs Problems");
-            Console.WriteLine("1.Binary Serach Program\n2.Insertion sort program\n3.Bubble Sort\n4.Merge Sort Problem\n5.Anagram Problem\n6.PrimeNumber\n7.PrimePalindrome");
+            Console.WriteLine("1.Binary Serach Program\n2.Insertion sort program\n3.Bubble Sort\n4.Merge Sort Problem\n5.Anagram Problem\n6.PrimeNumber\n7.PrimePalindrome\n8.GuessNumber");
             const string File_Path = @"D:\BridgelabzPracticeProblems\AlgorithmPrograms\AlgorithmPrograms\AlgorithmPrograms\AlgorithmPrograms\Data.txt";
             bool check = true;
             while (check)
@@ -65,6 +65,11 @@ namespace AlgotithmPrograms
                     case 7:
                         PrimePalindrome primePalindrome = new PrimePalindrome();
                         primePalindrome.PrimePalindromNumber();
+                        break;
+                    case 8:
+                        GuessGame game = new GuessGame();
+                        Console.WriteLine("Guess a number between 0 to 127");
+                        Console.WriteLine("Guessed no is :" + game.Find());
                         break;
                     default:
                         check = false;
