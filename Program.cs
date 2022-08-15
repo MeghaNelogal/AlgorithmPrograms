@@ -7,7 +7,7 @@ namespace AlgotithmPrograms
         public static void Main(string[] args)
         {
             Console.WriteLine("Welcome To Algotithm Programs Problems");
-            Console.WriteLine("1.Binary Serach Program\n2.Insertion sort program\n3.Bubble Sort\n4.Merge Sort Problem\n5.Anagram Problem");
+            Console.WriteLine("1.Binary Serach Program\n2.Insertion sort program\n3.Bubble Sort\n4.Merge Sort Problem\n5.Anagram Problem\n6.PrimeNumber");
             const string File_Path = @"D:\BridgelabzPracticeProblems\AlgorithmPrograms\AlgorithmPrograms\AlgorithmPrograms\AlgorithmPrograms\Data.txt";
             bool check = true;
             while (check)
@@ -58,9 +58,13 @@ namespace AlgotithmPrograms
                         string secondname = "hearte";
                         anagram.AnagramProblem(firstname, secondname);
                         break;
+                    case 6:
+                        PrimeNumber number = new PrimeNumber();
+                        number.CheckPrime();
+                        break;
                     default:
                         check = false;
-                        break;
+                        break;                                     
                 }
             }
         }
