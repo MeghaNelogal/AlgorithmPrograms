@@ -19,8 +19,6 @@ namespace AlgotithmPrograms
                 switch (option)
                 {
                     case 1:
-
-
                         string[] arr = words.Split(',');
                         Console.WriteLine("Enter word to Search");
                         string a = Console.ReadLine();
