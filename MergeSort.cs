@@ -49,7 +49,6 @@ namespace AlgorithmPrograms
                 k++;
             }
         }
-
         public void Sorting(int[] arr, int left, int right)
         {
             if (left < right)
